@@ -1,0 +1,44 @@
+#dropdown {
+  background: none;
+}
+
+.dropdown-menu-item {
+  color: #fff;
+  padding: 12px 0;
+  text-align: center;
+}
+
+.dropdown-menu-item-text {
+  text-align: center;
+
+}
+
+#hamburger-wrapper.open .hamburger-line {
+  background-color: #37039f;
+}
+
+#dropdown-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 60vh;
+  background-color: #37039f;
+  background-color: #fff;
+  background-image: linear-gradient(-30deg, #37039f, #c74fff);
+  transform: translateY(-60vh);
+  transition: transform .4s ease-in-out, opacity .4s ease-out;
+  box-shadow: 0 0 50px rgba(199, 79, 255, .3);
+  opacity: 0.2;
+  z-index: -1;
+}
+
+#dropdown-overlay.open {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+#element {
+  color: #fff;
+  d
+}

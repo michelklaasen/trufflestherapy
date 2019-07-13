@@ -1,0 +1,1184 @@
+/*----------------------------------------------
+Homepage -Landing section
+----------------------------------------------*/
+
+.scroll-snap {
+	scroll-snap-type: y mandatory;
+}
+
+.scroll-snap > .scroll-snap-section {
+	scroll-snap-align: start;
+}
+
+#landing-section {
+	background-color: #37039f;
+	background-image: url("../img/home/purple-mushrooms.jpg");
+	background-position: center;
+	background-size: cover;
+	min-height: 600px;
+	height: 100vh;
+	overflow:hidden;
+	position: relative;
+}
+
+#landing-section .background-overlay {
+	background: #5C258D;
+	background: -webkit-linear-gradient(#4389A2, #5C258D);
+	background: linear-gradient(#013, #37039f);
+	opacity: .2;
+}
+
+#landing-section .container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+
+#landing-content {
+	text-align: center;
+	color: white;
+	z-index: 1;
+}
+
+#landing-content > h1 {
+	font-size: 40px;
+	font-size: 12vw;
+	font-family: Montserrat;
+	font-weight: 900;
+	font-style:normal;
+	text-transform: uppercase;
+	margin:0;
+}
+
+#landing-content > h2 {
+	font-family: comfortaa;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 1.5;
+	text-transform: lowercase;
+	margin: .5em 0;
+	color: #fff;
+}
+
+#landing-button {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1em;
+	border-radius: 50px;
+	padding: 19px;
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 1.25px;
+	background: #37039f;
+	color: white;
+}
+
+@media (min-width: 600px) {
+	#landing-content > h1 {
+		font-size: 60px;
+	}
+	.exclamation {
+		font-size: 1em;
+	}
+}
+
+@media (min-width: 800px) {
+	#landing-section {
+		height: calc(100vh - 100px);
+	}
+	#landing-button {
+		width: 420px;
+	}
+}
+
+/* Homepage - Truffles section */
+
+.bg-image-section {
+	height: 100vh;
+	color: white;
+	font-size: 18px;
+	position: relative;
+
+	/* scroll-snap-type: y proximity; */
+
+}
+
+.bg-image-content-container {
+	display: flex;
+	justify-content: center;
+	flex-flow: column nowrap;
+	height: 100%;
+}
+
+.bg-image-content {
+	flex-basis:45%;
+	z-index: 1;
+	position: relative;
+}
+
+.bg-image-title {
+	font-family: Montserrat;
+	font-size: 2.5em;
+	font-weight: 600;
+	margin: 0;
+	text-align: center;
+	color: #fff;
+}
+
+.bg-image-text {
+	color: #fff;
+}
+
+.bg-image-button {
+	display: block;
+	text-align: center;
+	background: #37039f;
+	border-radius: 50px;
+	color: #fff;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 1.25px;
+	padding: 16px;
+}
+
+#truffles {
+	background:url('../img/home/truffles2.jpg');
+	background-size:cover;
+	background-position:right;
+	background-attachment: scroll;
+	box-shadow: inset 0 55vh 50vh -50vh rgba(0,0,0,0.5);
+}
+
+#truffles > .background-overlay {
+	background-color: #000;
+	opacity: .5;
+}
+
+#experience {
+	background-image: url('../img/home/ceremony-small.jpg');
+	background-size: cover;
+	background-position: right;
+	background-attachment: scroll;
+}
+
+#experience > .background-overlay {
+	background-color: #000;
+	opacity: .2;
+}
+
+@media (min-width: 420px) {
+	#landing-section {
+		/* background-image: url(''); */
+	}
+	#experience {
+		/* background-image: url(''); */
+	}
+	#truffles {
+		/* background-image: url(''); */
+	}
+}
+
+
+@media (min-width: 800px) {
+	.bg-image-content-container {
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.bg-image-flex-fill {
+		flex: 1;
+	}
+	.bg-image-title {
+		text-align: left;
+	}
+}
+
+/*----------------------------------------------
+Learn page - about truffles
+----------------------------------------------*/
+
+.article .container {
+}
+
+.article h2 {
+	margin-top: 104px;
+	margin-bottom: 60px;
+}
+
+.article p, .article li {
+	font-family: 'Lora', 'Literata', 'PT Serif', 'Crimson Text';
+	font-size: 18px;
+	line-height: 1.7;
+	color: #534d4b;
+	color: #111;
+	opacity: 1;
+}
+
+.article img {
+	border-radius: 4px;
+	max-height: 350px;
+	display: block;
+	margin: auto;
+}
+
+.note {
+	box-sizing: border-box;
+	border: 1px solid #bbb;
+	border-radius: 4px;
+	background-color: #f2f2f2;
+	padding: .5em 1em;
+}
+
+.text-container {
+	margin: 0 auto;
+	max-width: 680px;
+}
+
+#effects-image {
+	border: 1px solid #ede7e3;
+}
+
+@media (min-width: 550px) {
+	.article img {
+		min-height: 350px;
+		max-height: 500px;
+		object-fit: cover;
+	}
+	.article h2:first-child {
+		/* margin-top: 52px; */
+	}
+}
+
+@media (min-width: 700px) {
+	.float-left {
+		/* float: left; */
+		width: 33%;
+		min-width: 320px;
+		margin-right: 30px;
+	}
+}
+
+/*----------------------------------------------
+Learn page - resources
+----------------------------------------------*/
+.video-section-container {
+	margin: 1.5rem 0;
+}
+
+.video-section-container:first-child {
+	margin-top: 0;
+}
+
+.video-section-title-box {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding: 0 10px 0 0;
+	margin-bottom: 36px;
+}
+
+.video-section-title {
+	font-family: comfortaa;
+	font-weight: 400;
+	color: #999;
+	text-transform: lowercase;
+	margin: 0;
+}
+
+.view-all {
+	color: #d884ff;
+	font-weight: 400;
+	text-transform: lowercase;
+	font-family: comfortaa;
+	margin: 0;
+}
+
+.videos-container {
+	overflow: hidden;
+  min-height: 280px;
+	position: relative;
+}
+
+.videos-container-inner {
+  overflow-x: auto;
+	overflow-y: hidden;
+  display: flex;
+  flex-flow: row nowrap;
+	transition: transform .3s;
+}
+
+.videos-container-inner.open {
+	transform: translate(calc(-100% - 30px), 0);
+}
+
+@keyframes bounce-left {
+	0% {
+		transform: translate(0,0);
+	}
+	50% {
+		transform: translate(-35px, 0);
+	}
+	100% {
+		transform: translate(0,0);
+	}
+}
+
+.videos-container:hover .videos-container-inner {
+	/* animation: bounce-left .6s ease-in-out; */
+}
+
+.video-box {
+	max-width: 90vw;
+  max-height: 298px;
+	margin-right: 36px;
+}
+412
+
+.video-box:last-child {
+	margin: 0;
+}
+
+.video-thumbnail-wrapper {
+  height: 210px;
+  width: 376px;
+  max-width: 90vw;
+  overflow: hidden;
+  position: relative;
+	background: #000;
+	border-radius: 4px;
+}
+
+.video-thumbnail {
+  height: 100%;
+	object-fit: cover;
+  width: 100%;
+  border-radius: 4px;
+	transition: .5s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+.video-thumbnail-overlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 0;
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+	background: rgba(0,0,0,0.25);
+}
+
+.video-thumbnail-wrapper:hover .video-thumbnail-overlay {
+	opacity: 0;
+}
+
+.video-title {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  text-align: left;
+}
+
+.video-title-category {
+  color: white;
+	line-height: 1;
+	text-transform: lowercase;
+	font-family: comfortaa;
+	margin: 0 0 6px 0;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden; /* stutter debug */
+}
+
+.cat-heros {
+	color: khaki;
+}
+.cat-leti {
+	color: darksalmon;
+}
+.cat-must {
+	color: darkviolet;
+}
+.cat-why {
+	color: olivedrab;
+}
+.cat-michel {
+  color: deepskyblue;
+}
+.cat-informational {
+  color: mediumspringgreen;
+}
+
+.video-title-text {
+  margin: 0;
+	font-family: 'Montserrat';
+	font-weight: 700;
+  color: white;
+}
+
+.video-info-wrapper {
+	box-sizing: border-box;
+	height: 25%;
+	display: flex;
+	align-items: center;
+	color: #222;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	overflow: hidden;
+	padding-left: 8px;
+	padding-right: 10px;
+}
+
+.channel-icon-box {
+	flex-basis: auto;
+	height: 36px;
+	margin-right: 8px;
+	/* display: flex;
+	align-items: center; */
+}
+
+.channel-icon {
+	height: 36px;
+	width: 36px;
+	border-radius: 50px;
+	margin: auto;
+}
+
+.video-info {
+  flex: 4;
+  text-align: left;
+}
+
+.video-author {
+	font-family: 'PT Sans';
+	font-weight: normal;
+	letter-spacing: 0.3px;
+	color: #333;
+  margin: 0;
+  font-size: 12px;
+	font-size: 15px;
+	line-height: 1;
+}
+
+.video-date {
+	font-family: 'PT Sans';
+	letter-spacing: 0.3px;
+	color: #808080;
+	font-size: 10px;
+	font-size: 12px;
+  margin: 6px 0 0 0;
+	line-height: 1;
+}
+
+.sharing-box {
+  flex: 1;
+	text-align: right;
+}
+
+.share-text {
+	font-size: 14px;
+  text-decoration: none;
+  color: #d884ff;
+  text-transform: lowercase;
+}
+
+.watch-button-wrapper {
+  flex: 1;
+}
+
+.watch-button {
+  text-transform: lowercase;
+  font-family: Comfortaa;
+  padding: 12px 18px;
+  color: white;
+  background: #37039f;
+  border-radius: 100px;
+}
+
+/* Experimentation with tedtalks2 */
+#videos-tedtalks2 .video-box2 {
+	min-width: calc(100vw * 0.9 / 2);
+}
+
+
+
+
+
+/* Scrolling videos button */
+.scrollbutton-container {
+	position: absolute;
+	cursor: pointer;
+	width: 3rem;
+	height: 3rem;
+	border-radius: 100px;
+	background-color: white;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+	top: calc(105px - 1.5rem);
+	z-index: 99;
+	transition: box-shadow .5s;
+}
+
+.scrollbutton-container:hover {
+	box-shadow: 0 1px 20px rgba(0,0,0,0.5);
+}
+
+.button-go-left {
+	left: -1.5rem;
+	display: none;
+}
+
+.button-go-right {
+	right: -1.5rem;
+}
+
+.button-left-inner {
+	height: 100%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: flex-start;
+	padding-left: 30%;
+}
+
+.button-right-inner {
+	height: 100%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: flex-end;
+	padding-right: 30%;
+}
+
+.scrollbutton-line {
+	background-color: #c74fff;
+	width: 1rem;
+	height: 2.5px;
+	border-radius: 10px;
+	margin: 4px 0;
+}
+
+.button-left-line-top {
+	transform: rotateZ(-45deg);
+}
+
+.button-left-line-bottom {
+	transform: rotateZ(45deg);
+}
+
+.button-right-line-top {
+	transform: rotateZ(45deg);
+}
+
+.button-right-line-bottom {
+	transform: rotateZ(-45deg);
+}
+
+
+
+
+/*----------------------------------------------
+Retreats page - Overview
+----------------------------------------------*/
+
+/* Overview */
+.discover-video-box {
+	width: 100%;
+	margin-top: 1rem;
+}
+
+.process-box {
+	border-radius: 10px;
+	overflow: hidden;
+	box-sizing: border-box;
+	max-width: 520px;
+	margin-bottom: 2rem;
+	/* border: 1px solid #ddd; */
+}
+
+.process-box:last-child {
+	margin-bottom: 0;
+}
+
+.process-image {
+	min-height: 180px;
+	max-height: 240px;
+	display: block;
+	margin: auto;
+}
+
+.process-box-content {
+	/* width: 90%; */
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.process-title {
+	text-align: center;
+}
+
+#approach {
+	margin: 2rem 0;
+}
+
+
+@media (min-width: 420px) {
+	#process.flex-container {
+		justify-content: center;
+	}
+}
+
+@media (min-width: 740px) {
+	#process.flex-container {
+		justify-content: space-between;
+	}
+	.process-box-container {
+		flex-basis: 47%;
+	}
+	#integration {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media (min-width: 870px) {
+	.discover-text {
+		flex-basis: 48.5%;
+		align-self: flex-start;
+	}
+	.discover-text h2 {
+		text-align: left;
+	}
+	.discover-video-box {
+		flex-basis: 48.5%;
+		margin: 0;
+	}
+	#approach {
+		margin: 3rem auto;
+		width: 75%;
+	}
+	#approach h2 {
+		text-align: center;
+	}
+}
+
+@media (min-width: 1050px) {
+	.process-box-container {
+		flex-basis: 30%;
+	}
+	#integration {
+		margin: 0;
+	}
+}
+
+/*----------------------------------------------
+Retreats page - Group
+----------------------------------------------*/
+
+#july-11 {
+	background-image: url("../img/retreats/group-retreat-july-11.jpg");
+}
+#aug-4 {
+	background-image: url("../img/retreats/group-retreat-aug-4-large.jpg");
+	/* Resize image */
+}
+#aug-23 {
+	background-image: url("../img/retreats/group-retreat-aug-23.jpg");
+}
+#sep-1 {
+	background-image: url("../img/retreats/group-retreat-sep-1.jpg");
+}
+#sep-15 {
+
+}
+#oct-6 {
+
+}
+
+.gr-container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	margin-top: 2rem;
+}
+
+.gr-box {
+	background-position: center;
+	background-size: cover;
+	border-radius: 10px;
+	position: relative;
+	margin-bottom: 1.5rem;
+	height: 240px;
+	flex-basis: 100%;
+	overflow: hidden;
+}
+
+.gr-overlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: black;
+	opacity: .3;
+	transition: opacity .2s;
+}
+
+.gr-overlay:hover {
+	opacity: 0;
+}
+
+.gr-box div:not(.gr-overlay) {
+	pointer-events:none;
+}
+
+.space-box {
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+}
+
+.space-available {
+	color: aqua;
+	margin: 0;
+}
+
+.fully-booked {
+	color: magenta;
+}
+
+.date-box {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	width: 80px;
+	text-align: center;
+}
+
+.calendar-header {
+	background: #ff387e;
+	color: white;
+	border-radius: 6px 6px 0 0;
+	padding: 4px 0;
+}
+
+.calendar-body {
+	background: white;
+	border-radius: 0 0 6px 6px;
+	height: 100%;
+	padding: 8px 0;
+}
+
+.title-box {
+	position: absolute;
+	bottom: 1rem;
+	left: 1rem;
+	right: 1rem;
+}
+
+.gr-title {
+	text-align: center;
+	color: white;
+	margin: 0;
+	font-size: 1.25rem;
+}
+
+.little-dot {
+	opacity: yes;
+}
+
+.gr-tag {
+	font-style: italic;
+}
+
+.gr-include {
+	margin-top: 2rem;
+}
+
+.gr-included-list {
+  list-style: none; /* Remove default bullets */
+}
+
+.gr-included-text-box li {
+	margin-bottom: .5em;
+}
+
+.gr-included-list li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #ff387e; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+
+@media (min-width: 800px) {
+	.center-800 {
+		text-align: center;
+	}
+	.gr-box {
+		flex-basis: 48.5%;
+		height: 250px;
+	}
+	.gr-included-text-box {
+		width: 75%;
+		margin: auto;
+	}
+}
+
+@media (min-width: 1200px) {
+	.gr-included-text-box {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+	}
+	.gr-included-list {
+		flex-basis: 47%;
+	}
+}
+
+#commitment {
+	min-height: 75vh;
+	background-color: #5e2fed;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 4rem 0;
+}
+
+.commitment-container {
+	flex-basis: 90%;
+	text-align: center;
+	padding: 2rem 0;
+}
+
+.commitment-image {
+	height: 3rem;
+	display: block;
+	margin: auto;
+}
+
+.commitment-title {
+	color: white;
+}
+
+#commitment h2, #commitment p {
+	color: #fff;
+}
+
+@media (min-width: 870px) {
+	.commitment-container {
+		flex-basis: 75%;
+	}
+}
+
+@media (min-width: 1050px) {
+	.commitment-container {
+		flex-basis: 50%;
+	}
+}
+
+
+
+
+
+/* Testimonials */
+.testimonials-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin: 0 -30px;
+}
+
+.testimonial-box {
+	margin: 0 30px;
+	transition: all .3s;
+}
+
+.testimonial-content {
+	text-align: center;
+}
+
+.testimonial-image {
+	width: 300px;
+	height: 300px;
+	display: block;
+	margin: 0 auto;
+	border-radius: 8px;
+	/* animation: rotate 6s linear infinite; */
+	transition: transform .4s ease-out;
+	pointer-events: none;
+}
+
+.testimonial-box-2 .testimonial-image {
+	animation-delay: 2s;
+}
+
+.testimonial-box-3 .testimonial-image {
+	animation-delay: 4s;
+}
+
+.testimonial-box-1:hover {
+	/* background-image: linear-gradient(135deg, rgba(243, 210, 191, 0.2), rgba(142, 82, 47,0.2)); */
+}
+
+.testimonial-box-1:hover .testimonial-image {
+	box-shadow: 0 2px 8px rgba(134,84,49,0.3);
+	transform: translateX(840px);
+}
+
+.testimonial-box-3 {
+	transition: transform .6s;
+	transition-delay: 4s;
+}
+
+.testimonial-box-3:hover .testimonial-image {
+	box-shadow: 0 2px 8px rgba(134,84,49,0.3);
+	/* transform: translateX(-840px); */
+	animation: bounce .4s ease 2 alternate;
+	/* transform: translateX(-880px); */
+}
+
+@keyframes rotate {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes bounce {
+	50% {
+		transform: translate3d(-420px, -500px, 0);
+	}
+	100% {
+		transform: translate3d(-840px, 0, 0);
+	}
+}
+
+@keyframes go-left {
+	to {
+		transform: translateX(-840px);
+	}
+}
+
+
+
+
+/*----------------------------------------------
+About page
+----------------------------------------------*/
+
+.beginnings-container {
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+.beginnings-image-container {
+	margin: 0;
+	order: 1;
+}
+
+.beginnings-image {
+	border-radius: 10px;
+	max-height: 40vh;
+	display: block;
+	margin: auto;
+}
+
+@media (min-width: 800px) {
+	.beginnings-container {
+		display: block;
+		flex-flow: row wrap;
+	}
+	.beginnings-image-container {
+		display: inline;
+		float: left;
+		margin-right: 2rem;
+	}
+}
+
+.standout {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 50vh;
+	text-align: center;
+	position: relative;
+}
+
+.standout-content {
+	padding: 5rem 0;
+}
+
+.standout-content > h2 {
+	margin-top: 0;
+}
+
+.standout-content > p {
+	font-family: comfortaa;
+	font-size: 1.1em;
+}
+
+.page-break-overlay {
+	position: absolute;
+	top: -1px;
+	left: 0;
+	width: 100%;
+	height: 36px;
+	background-image: url("../img/about/page-break-top-small.png");
+	background-size: 100% 100%;
+	background-position: top;
+	background-repeat: no-repeat;
+	z-index: 1;
+}
+
+@media (min-width: 800px) {
+	.page-break-overlay {
+		background-image: url("../img/about/page-break-top-large.png");
+		height: 56px;
+		top: 0;
+	}
+}
+
+.standout-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	/* background-color: rgba(0,0,0,0.3); */
+	z-index: 0;
+	pointer-events: none;
+}
+
+
+#our-vision {
+	background-color: #2a1275;
+	background-image: url("../img/about/night-sky-small.jpg");
+	background-size: cover;
+	background-position: center;
+	margin-top: 4rem;
+}
+
+#our-vision p, #our-vision h2 {
+	color: #fff;
+}
+
+@media (min-width: 650px) {
+	#our-vision {
+		background-image: url("../img/about/night-sky-large.jpg");
+	}
+}
+@media (min-width: 1200px) {
+	#our-vision {
+		background-image: url("../img/about/night-sky-large.jpg");
+	}
+}
+
+#our-vision .standout-h2 {
+	margin-top: 36px;
+}
+@media (min-width: 800px) {
+	#our-vision .standout-h2 {
+		margin-top: 56px;
+	}
+}
+
+#our-mission p, #our-mission h2 {
+	color: #de33ff;
+}
+
+#gratitude {
+	background-image: linear-gradient(#5e2de2, #5d1c8c);
+	color: #b3ffff;
+	margin: 0;
+}
+
+#gratitude p, #gratitude h2 {
+	color: #b3ffff;
+}
+
+/* Crazy moving waves page break */
+.moving-waves-break {
+  display: block;
+  width: 100%;
+  height: 60px;
+  margin: 0;
+  z-index: 5;
+	background-color: #fff;
+	margin-top: 4rem;
+}
+
+@media (min-width: 720px) {
+	.standout > .container {
+		width: 75%;
+	}
+	.moving-waves-break {
+		height: 80px;
+	}
+}
+
+.parallax1 > use {
+  animation: move-forever1 10s linear infinite;
+  &:nth-child(1) {
+    animation-delay: -2s;
+  }
+}
+.parallax2 > use {
+  animation: move-forever2 8s linear infinite;
+  &:nth-child(1) {
+    animation-delay: -2s;
+  }
+}
+.parallax3 > use {
+  animation: move-forever3 6s linear infinite;
+  &:nth-child(1) {
+    animation-delay: -2s;
+  }
+}
+.parallax4 > use {
+  animation: move-forever4 4s linear infinite;
+  &:nth-child(1) {
+    animation-delay: -2s;
+  }
+}
+@keyframes move-forever1 {
+  0% {
+    transform: translate(85px, 0%);
+  }
+  100% {
+    transform: translate(-90px, 0%);
+  }
+}
+@keyframes move-forever2 {
+  0% {
+    transform: translate(-90px, 0%);
+  }
+  100% {
+    transform: translate(85px, 0%);
+  }
+}
+@keyframes move-forever3 {
+  0% {
+    transform: translate(85px, 0%);
+  }
+  100% {
+    transform: translate(-90px, 0%);
+  }
+}
+@keyframes move-forever4 {
+  0% {
+    transform: translate(-90px, 0%);
+  }
+  100% {
+    transform: translate(85px, 0%);
+  }
+}

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.png" type="image/x-icon">
+  <title>Truffles Therapy</title>
+  <!-- CSS -->
+  <link rel="stylesheet" type-"text/css" href="css/global.css">
+  <link rel="stylesheet" type-"text/css" href="css/pages.css">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa|Montserrat:400,700|Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body id="body" class="scroll-snap">
+  <a href="../index.html" id="go-home">
+    <style>
+      #go-home {
+      	position: fixed;
+      	top: 1rem;
+      	right: 1rem;
+      	height: 70px;
+      	width: 70px;
+      	overflow: hidden;
+      	background: white;
+      	color: #37039f;
+      	font-weight: 600;
+      	box-shadow: 0 0 5px rgba(0,0,0,0.5);
+      	border-radius: 50px;
+      	text-decoration: none;
+        z-index: 1060;
+      }
+
+      #go-home div {
+      	display: flex;
+      	height: 100%;
+      	align-items: center;
+      	justify-content: center;
+      	text-align: center;
+      }
+
+      #go-home:hover {
+      	background-color: #f2f2f2;
+      }
+    </style>
+    <div>Home</div>
+  </a>
+
+
+  <!-- Header & Co -->
+<div class="scroll-snap-section">
+  <header id ="header">
+    <div class="container">
+      <div class="desktop-header">
+        <div id="header-menu-container-large">
+          <nav id="header-menu-left">
+            <a href="learn.html" class="header-menu-item">Learn</a>
+            <a href="experience.html" class="header-menu-item middle-item-right">Experience</a>
+            <a href="retreats.html" class="header-menu-item">Retreats</a>
+          </nav>
+          <div id="header-logo-container">
+            <a href="index.html">
+              <img src="img/heart-mushroom-logo-small.png" alt="Trufflestherapy Logo" id="header-logo">
+            </a>
+          </div>
+          <nav id="header-menu-right">
+            <a href="about.html" class="header-menu-item">About</a>
+            <a href="blog.html" class="header-menu-item middle-item-right">Blog</a>
+            <a href="connect.html" class="header-menu-item">Connect</a>
+          </nav>
+        </div>
+      </div>
+      <div class="mobile-header">
+        <div id="header-menu-container-small">
+          <div class="hamburger-container">
+            <div id="hamburger-wrapper" onclick="toggleThatBurger()">
+              <div class="hamburger-line hamburger-line-top"></div>
+              <div class="hamburger-line hamburger-line-bottom"></div>
+            </div>
+          </div>
+          <div class="header-mobile-logo-container">
+            <a href="index.html">
+              <img src="img/heart-mushroom-logo-small.png" alt="Trufflestherapy Logo" id="header-logo-mobile">
+            </a>
+          </div>
+        </div>
+        <!-- Dropdown -->
+        <div id="dropdown" class="fade-in-down">
+          <div class="container">
+            <div class="dropdown-menu-wrapper">
+              <a class="dropdown-menu-item" href="learn.html">
+                <span class="dropdown-menu-item-text">Learn</span>
+              </a>
+              <a class="dropdown-menu-item" href="learn.html">
+                <span class="dropdown-menu-item-text">Experience</span>
+              </a>
+              <a class="dropdown-menu-item" href="learn.html">
+                <span class="dropdown-menu-item-text">Retreats</span>
+              </a>
+              <a class="dropdown-menu-item" href="learn.html">
+                <span class="dropdown-menu-item-text">About</span>
+              </a>
+              <a class="dropdown-menu-item" href="learn.html">
+                <span class="dropdown-menu-item-text">Blog</span>
+              </a>
+              <a class="dropdown-menu-item" href="learn.html">
+                <span class="dropdown-menu-item-text">Connect</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Landing section -->
+  <section id="landing-section">
+    <div class="container">
+      <div id="landing-content">
+        <h1>Be Happiness</h1>
+        <h2>Experience a magical retreat with truffles therapy, the definite solution to wellbeing.</h2>
+        <a href="#" id="landing-button">Experience a retreat</a>
+      </div>
+    </div>
+    <div class="background-overlay"></div>
+  </section>
+</div>
+
+  <!-- About truffles section -->
+  <div class="scroll-snap-section">
+
+  <section id="truffles" class="bg-image-section">
+    <div class="container">
+      <div class="bg-image-content-container">
+        <div class="bg-image-content">
+          <h2 class="bg-image-title">What are truffles?</h2>
+          <p class="bg-image-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor gravida velit, vitae malesuada orci tempor at. Aliquam quis molestie ex. Vestibulum vulputate fermentum lorem, id tincidunt nisi finibus eget. Pellentesque ut lectus aliquam, sagittis eros eget, lobortis lacus. Sed porta volutpat vehicula. Curabitur porttitor interdum malesuada. Integer quis justo eget nibh rutrum dapibus eu eget ante.</p>
+          <a class="bg-image-button" href="#">Learn more</a>
+        </div>
+        <div class="bg-image-flex-fill"></div>
+      </div>
+    </div>
+    <div class="background-overlay"></div>
+  </section>
+</div>
+
+  <!-- Experience section -->
+  <div class="scroll-snap-section">
+
+  <section id="experience" class="bg-image-section">
+    <div class="container">
+      <div class="bg-image-content-container">
+        <div class="bg-image-flex-fill"></div>
+        <div class="bg-image-content">
+          <h2 class="bg-image-title">The Experience</h2>
+          <p class="bg-image-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor gravida velit, vitae malesuada orci tempor at. Aliquam quis molestie ex. Vestibulum vulputate fermentum lorem, id tincidunt nisi finibus eget. Pellentesque ut lectus aliquam, sagittis eros eget, lobortis lacus. Sed porta volutpat vehicula. Curabitur porttitor interdum malesuada. Integer quis justo eget nibh rutrum dapibus eu eget ante.</p>
+          <a class="bg-image-button" href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+    <div class="background-overlay"></div>
+  </section>
+
+</div>
+
+
+<footer>Copyrights.</footer>
+
+
+
+<!-- Mobile menu opener -->
+<script>
+  function toggleThatBurger() {
+     var burger = document.getElementById("hamburger-wrapper");
+     burger.classList.toggle("open");
+     var dropdown = document.getElementById("dropdown");
+     dropdown.classList.toggle("open")
+     var body = document.getElementById("body");
+     body.classList.toggle("fixed");
+  }
+</script>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Mobile hamburger opener -->
+<script>
+  $(document).ready(function(){
+     $(".burger-container,.sb-container").click(function(){
+         $(".burger,#sidebar-nav,#fullscreen-nav").toggleClass('open');
+     });
+  });
+</script>
+
+
+
+<!-- Transition debug script -->
+<script> </script>
+
+</body>
+</html>
