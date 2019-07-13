@@ -685,23 +685,6 @@ Horizontal tabs menu
 	font-family: 'Open Sans', sans-serif;
 }
 
-.tabcontent-h2 {
-	font-family: 'Montserrat';
-	text-align: center;
-	font-weight: 700;
-	font-size: 29px;
-	margin-top: 0;
-	color: #333;
-}
-
-.tabcontent h2 {
-	color: #33302e;
-	text-align: center;
-	font-weight: 700;
-	font-family: 'Montserrat';
-	font-size: 29px;
-}
-
 /* .tabcontent */
 p {
 	font-family: 'Open Sans', sans-serif;
