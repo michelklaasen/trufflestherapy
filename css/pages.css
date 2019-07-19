@@ -1164,7 +1164,7 @@ About page
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	min-height: 50vh;
+	min-height: 60vh;
 	text-align: center;
 	position: relative;
 }
@@ -1195,6 +1195,10 @@ About page
 	z-index: 1;
 }
 
+.mirror {
+	trasnform: scaleX(-1);
+}
+
 @media (min-width: 800px) {
 	.page-break-overlay {
 		background-image: url("../img/about/page-break-top-large.png");
@@ -1217,7 +1221,7 @@ About page
 
 #our-vision {
 	background-color: #2a1275;
-	background-image: url("../img/about/night-sky-small.jpg");
+	background-image: url("../img/about/outer-space-small.jpg");
 	background-size: cover;
 	background-position: center;
 	margin-top: 4rem;
@@ -1227,14 +1231,14 @@ About page
 	color: #fff;
 }
 
-@media (min-width: 650px) {
+@media (min-width: 420px) {
 	#our-vision {
-		background-image: url("../img/about/night-sky-large.jpg");
+		background-image: url("../img/about/outer-space-medium.jpg");
 	}
 }
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
 	#our-vision {
-		background-image: url("../img/about/night-sky-large.jpg");
+		background-image: url("../img/about/outer-space-large.jpg");
 	}
 }
 
