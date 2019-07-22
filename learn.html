@@ -42,18 +42,21 @@
         <div id="header-menu-container-small">
           <div class="hamburger-container">
             <div id="hamburger-wrapper" onclick="toggleThatBurger()">
-              <div class="hamburger-line hamburger-line-top"></div>
-              <div class="hamburger-line hamburger-line-bottom"></div>
+              <div id="hamburger-inner">
+                <div class="hamburger-line hamburger-line-top"></div>
+                <div class="hamburger-line hamburger-line-bottom"></div>
+              </div>
             </div>
           </div>
-          <div class="header-mobile-logo-container">
+          <div class="header-logo-mobile-container">
             <a href="index.html">
               <img src="img/heart-mushroom-logo-small.png" alt="Trufflestherapy Logo" id="header-logo-mobile">
             </a>
           </div>
         </div>
         <!-- Dropdown -->
-        <div id="dropdown" class="fade-in-down">
+        <div id="dropdown-overlay"></div>
+        <div id="dropdown">
           <div class="container">
             <div class="dropdown-menu-wrapper">
               <a class="dropdown-menu-item" href="learn.html">
@@ -77,6 +80,10 @@
             </div>
           </div>
         </div>
+      </div>
+
+      <div class="mobile-header2">
+
       </div>
     </div>
   </header>

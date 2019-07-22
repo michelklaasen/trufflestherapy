@@ -3,7 +3,7 @@ Global CSS
 --------------------------------*/
 
 :root {
-	--m-header-height: 55px;
+	--m-header-height: 72px;
 }
 
 body {
@@ -199,9 +199,10 @@ Top header navigation
 }
 
 #header-logo-mobile {
-	height: 40px;
+	height: 45.4px;
 	display: block;
 	margin-left: auto;
+	padding-right: 12px;
 }
 
 .hamburger-container {
@@ -253,7 +254,7 @@ Top header navigation
 }
 
 #hamburger-wrapper.open .hamburger-line {
-	/* background-color: #fff; for fancy overlay */
+	background-color: #fff; for fancy overlay
 }
 
 /* Dropdown */
@@ -276,12 +277,8 @@ Top header navigation
 	animation: fade-in-down;
 	transition: .3s;
 
-	background-color: #fff;
+	/* background-color: #fff; */
 	/* border-bottom: 2px solid #ddd; */
-}
-
-#dropdown .container {
-	padding-left: 10px;
 }
 
 #dropdown.open {
@@ -291,6 +288,17 @@ Top header navigation
 
 #dropdown-overlay {
 	position: fixed;
+	z-index: -1;
+	pointer-events: none;
+	/* top: 10.8px;
+	left: 7px;
+	width: 50px;
+	height: 50px; */
+	background-color: #37039f;
+	/* border-radius: 100%; */
+	opacity: .2;
+
+
 
 	/* top: -150px;
 	left: -50px;
@@ -308,8 +316,18 @@ Top header navigation
 }
 
 #dropdown-overlay.open {
-	transform: scale(1);
+	top: 0;
+	left: 0;
+	width: 200vw;
+	height: 100vh;
+	opacity: 1;
+	border-radius: 0 0 100% 0 ;
+	transform: scale(15) translateX(20px);
+	transition: transform .3s ease-out, opacity .5s;
 }
+
+
+
 
 .dropdown-menu-wrapper {
 	padding: 8px 0;
@@ -319,9 +337,9 @@ Top header navigation
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	padding: 8px 0;
+	padding: 12px 0 12px 24px;
 	transition: .25s;
-	color: #b3b3b3;
+	color: #fff;
 	/* color: #fff; */ /*For fancy overlay */
 }
 
@@ -581,7 +599,7 @@ Horizontal tabs menu
 .tabs-container {
 	padding: 0 16px;
 	border-bottom: 1px solid #ddd;
-	margin-top: var(--m-header-height);
+	margin-top: calc(var(--m-header-height) + 3px);
 }
 
 .tabs-inner {
@@ -590,7 +608,7 @@ Horizontal tabs menu
 	flex-flow: row nowrap;
 	margin-bottom: -1px;
 	overflow-x: auto;
-	padding-top: 5.2px;
+	padding-top: 8.2px;
 }
 @media (max-width: 479px) {
 	#about-tabs .tabs-inner {
