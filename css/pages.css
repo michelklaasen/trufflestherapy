@@ -3,7 +3,9 @@ Homepage -Landing section
 ----------------------------------------------*/
 
 .scroll-snap {
-	scroll-snap-type: y mandatory;
+	-webkit-scroll-snap-type: y mandatory;
+	    -ms-scroll-snap-type: y mandatory;
+	        scroll-snap-type: y mandatory;
 }
 
 .scroll-snap > .scroll-snap-section {
