@@ -120,7 +120,7 @@ Homepage -Landing section
 	position: relative;
 }
 
-.bg-image-title {
+.bg-image-content > h2 {
 	font-family: Montserrat;
 	font-size: 2.5em;
 	font-weight: 600;
@@ -129,7 +129,7 @@ Homepage -Landing section
 	color: #fff;
 }
 
-.bg-image-text {
+.bg-image-content > p {
 	color: #fff;
 }
 
@@ -633,6 +633,7 @@ Retreats page - Overview
 @media (min-width: 420px) {
 	#process.flex-container {
 		justify-content: center;
+		align-items: flex-start;
 	}
 }
 
@@ -663,7 +664,7 @@ Retreats page - Overview
 		margin: 0;
 	}
 	#approach {
-		margin: 3rem auto;
+		margin: 60px auto;
 		width: 75%;
 	}
 	#approach h2 {
@@ -1265,81 +1266,4 @@ About page
 
 #gratitude p, #gratitude h2 {
 	color: #b3ffff;
-}
-
-/* Crazy moving waves page break */
-.moving-waves-break {
-  display: block;
-  width: 100%;
-  height: 60px;
-  margin: 0;
-  z-index: 5;
-	background-color: #fff;
-	margin-top: 4rem;
-}
-
-@media (min-width: 720px) {
-	.standout > .container {
-		width: 75%;
-	}
-	.moving-waves-break {
-		height: 80px;
-	}
-}
-
-.parallax1 > use {
-  animation: move-forever1 10s linear infinite;
-  &:nth-child(1) {
-    animation-delay: -2s;
-  }
-}
-.parallax2 > use {
-  animation: move-forever2 8s linear infinite;
-  &:nth-child(1) {
-    animation-delay: -2s;
-  }
-}
-.parallax3 > use {
-  animation: move-forever3 6s linear infinite;
-  &:nth-child(1) {
-    animation-delay: -2s;
-  }
-}
-.parallax4 > use {
-  animation: move-forever4 4s linear infinite;
-  &:nth-child(1) {
-    animation-delay: -2s;
-  }
-}
-@keyframes move-forever1 {
-  0% {
-    transform: translate(85px, 0%);
-  }
-  100% {
-    transform: translate(-90px, 0%);
-  }
-}
-@keyframes move-forever2 {
-  0% {
-    transform: translate(-90px, 0%);
-  }
-  100% {
-    transform: translate(85px, 0%);
-  }
-}
-@keyframes move-forever3 {
-  0% {
-    transform: translate(85px, 0%);
-  }
-  100% {
-    transform: translate(-90px, 0%);
-  }
-}
-@keyframes move-forever4 {
-  0% {
-    transform: translate(-90px, 0%);
-  }
-  100% {
-    transform: translate(85px, 0%);
-  }
 }

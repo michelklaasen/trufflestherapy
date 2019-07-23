@@ -290,13 +290,13 @@ Top header navigation
 	position: fixed;
 	z-index: -1;
 	pointer-events: none;
+	background-color: #37039f;
+	opacity: .2;
 	/* top: 10.8px;
 	left: 7px;
 	width: 50px;
 	height: 50px; */
-	background-color: #37039f;
 	/* border-radius: 100%; */
-	opacity: .2;
 
 
 
@@ -391,7 +391,7 @@ Top header navigation
 	font-family: comfortaa;
 	font-size: 14px;
 	transition: color .2s;
-	padding: 52.4px 0;
+	padding: 14px 0;
 }
 
 .middle-item-left {
